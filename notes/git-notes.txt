@@ -1,0 +1,7 @@
+1. git init - To initialize git repository in your project.
+
+Working Directory <===> Staging Area <===> Local Repository <===> Remote Repository
+
+2. git status - To see the status of your folder and files. Where it is present.
+        red color - files and folders are present in the working directory not moved to staging area.
+        green color - files and folders are present in the staging area and is ready to commit.

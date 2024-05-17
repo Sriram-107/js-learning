@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.parent-event,
+.child-event,
+button {
+  padding: 20px;
+  border: 2px solid red;
+}
+
+#loading {
+  height: 60px;
+  width: 60px;
+  border: 20px solid;
+  border-color: transparent black transparent black;
+  border-radius: 50px;
+  animation-name: loadingAnimation;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-delay: 0.5s;
+  animation: loadingAnimation 0.7s linear 0.1s infinite;
+}
+
+@keyframes loadingAnimation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+
+.accessories {
+  display: grid;
+  grid-template: 100px 100px 100px/ 100px 100px;
+  gap: 20px;
+}
+
+span {
+  width: 100px;
+  height: 100px;
+  background-color: sandybrown;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  /* display: none; */
+  position: absolute;
+  width: 100vh;
+  height: 100vh;
+  background-color: grey;
+}

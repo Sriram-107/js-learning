@@ -1,0 +1,48 @@
+To run your js code install nodejs.
+Type node <filename>.js.
+
+array.length - To find the length of the array.
+array.indexOf(element_name) - To find the indexOf the array.
+// Adding items
+array.push(element_name) - To push new element into the end of the array.
+array.unshift(element_name) - To push new element to the start of the array.
+
+// Removing items
+array.pop() - To pop the last element in the array.
+array.shift() - To pop the first element in the array.
+array.splice(1,3) - 
+    splice is used to remove multiple array elements. 
+    Performs operation on the same array.
+    Removes the elements from start index 1 to end index 3. 
+
+// Accessing items
+for of loop - To access each item in the array.
+array.map() - To do same operation in the array. Does not update the same array.
+array.filter() - Returns true or false based on the condition. Only returns the elements based on the condition.
+
+// Converting string and arrays.
+string.split(alphabet_letter) - Returns new array based on the condition.
+
+Debouncing & Throttling - To optimize event handling in javascript.
+
+Debouncing example - search in flipkart - When entering a search and paused it takes some seconds to                   again make api request for search resutls.
+                     Each keystrokes entered time gap is 100ms and when the keystroke entering is paused for 400ms the api request is made. This is called Debouncing.
+
+Throttling example - In twitter when you scroll down you get new posts and the request is made 
+                     based on the scroll. The space between the bottom of the browser and the scrollbar is calculated and api call is made.
+
+// ---------------------------------------------------------------------------------------------
+
+// Event propogation - Event propogation defines in which order the events are triggered in parent child elements.
+
+// Event Bubbling - bottom to top - child to parent the event listeners are executed. By default event bubbling happens. 
+
+// Event Capturing - top to bottom - parent to child event is executed. Add second parameter to eventListener {caputre : true}
+
+How to stop event propogation? 
+    Inside the event  listeners add event.stopPropogation()
+
+// Event Delegation - with Event Delegation we add event listener to the parent element instead of the descendent elements.
+How to stop event bubbling?
+
+
