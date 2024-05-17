@@ -5,3 +5,15 @@ Working Directory <===> Staging Area <===> Local Repository <===> Remote Reposit
 2. git status - To see the status of your folder and files. Where it is present.
         red color - files and folders are present in the working directory not moved to staging area.
         green color - files and folders are present in the staging area and is ready to commit.
+
+3. git add <file-name> - To add the files and folders to staging area.
+4. git add . - To add all the files and folders to staging area.
+
+5. git commit -m <message-name> - To commit the changes moved from staging area to local repository.
+
+6. git log - To see all the commits.
+
+Why staging area? - Sometimes you don't need all the files to be tracked and commited. 
+                    So staging area is a good place to decide which files need to be commited.
+
+6. git checkout - To revert/rollback your last commit moves from local repository to working directory.
