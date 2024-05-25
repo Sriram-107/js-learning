@@ -1,0 +1,12 @@
+two pointer approach
+1. Given an array of sorted integers, find 2 numbers such that they add up to a target number.
+    How does my input look like.
+    Will the sum cause integer overflow.
+
+    approach 1 - Brute force algorithm(O n^2)
+        2 for loop iterate through to find target sum.
+
+    approach 2 - O nlogn > O n^2
+        sorting an array and scanning 
+
+    If it is already a sorted array then we can go with binary search.

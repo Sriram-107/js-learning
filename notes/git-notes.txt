@@ -16,4 +16,9 @@ Working Directory <===> Staging Area <===> Local Repository <===> Remote Reposit
 Why staging area? - Sometimes you don't need all the files to be tracked and commited. 
                     So staging area is a good place to decide which files need to be commited.
 
-6. git checkout - To revert/rollback your last commit moves from local repository to working directory.
+7. git checkout - To revert/rollback your last commit moves from local repository to working directory.
+
+Push from local repository to remote repository
+1.git remote add origin https://github.com/Sriram-107/js-learning.git
+2.git remote -v
+3.git push -u origin master

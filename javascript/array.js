@@ -90,3 +90,6 @@ arr.forEach((element) => {
 
     }
 })
+
+// splice performs operation on the original array.
+// slice performs operation on the shallow copy of an array.

@@ -1,0 +1,100 @@
+What is an algorithm?
+    Algorithm is a set of well-defined instructions to solve a particular problem.
+
+Algorithm for adding 2 numbers
+    Input => Algorithm(Add using + operator, Return the value) => Output.
+
+Characteristics of algorithm
+    1.Well defined inputs and outputs.
+    2.Each step should be clear and unambiguous.
+    3.Language independent.
+    4.One problem can be solved in many ways using different algorithms.
+    5.Learning algorithm means Learning different techniques to solve the problem.
+
+How do we analyse which algorithm is the most efficient way to solve a problem.
+
+Evaluating the performance of algorithm based on its input size.
+    1.Time Complexity - Amount of time taken by an algorithm to run as function of input size.
+    2.Space Complexity - Amount of memory taken by an algorithm to run as function of input size.
+
+    By analysing against input the evaluation is not machine independent.
+
+Notation to represent Complexity
+    1.Big O notation - Worst case Complexity.
+    2.Omega notation - Best case Complexity.
+    3.Theta notation - Average case Complexity.
+
+Big O notation Time Complexity - Time Complexity is dependent on input size.
+When calculating time Complexity check how many times the line got executed.
+
+1.Linear Time Complexity.
+n=4 => input = 4;
+function sum(n){
+    let sum = 0; // 1 time executed
+    for(let i = 1; i <= n; i++){
+        sum+=i; // 4 time executed
+    }
+    return sum; // 1 time executed
+}
+1+4+1 => 4+2 => Time Complexity => O(n+2) => Approximately O(n) - Linear Time Complexity.
+Linear Time Complexity => As input increases time Complexity also increases. 
+
+2.Constant Time Complexity
+n = 10, input - 10
+function summation(n){
+    return (n * (n + 1)) / 2;
+}
+Constant Time Complexity - O(1)
+Constant Time Complexity => As input increases time Complexity is constant.
+
+3.Quadratic Time Complexity
+for(int i=0; i<10; i++){
+    for(let j = 0; j<10; j++){
+
+    }
+}
+2 for loops => O(n^2)
+
+4.Logarthmic Time Complexity - O(logn)
+Input size reduces by half every iteration.
+
+-------------------------------------------------------------------------------------
+
+Space Complexity
+O(1) => Sorting algorithm When we are working on the same array.
+O(n) => Space grows with input increase.
+O(logn) => Space grows not at the same rate as input size.
+
+Best to Worst Complexity
+O(1) => O(logn) => O(nlogn) => O(n^2) => O(2^n) => O(n!)
+
+--------------------------------------------------------------------------------------
+
+Objects Big O notation
+
+Insert - O(1)
+Remove - O(1)
+Access - O(1)
+Search - O(n) - In the worst  case we have to search all properties.
+Object.keys() - O(n)
+Object.values() - O(n)
+Object.entries() - O(n)
+
+-----------------------------------------------------------------------------------------
+
+Arrays Big O notation
+
+Insert/remove at end - O(1)
+Insert/remove at start - O(n) - This is because index has to be reset for every remaining array.
+Access - O(1)
+Search - O(n) - Element can be last at worst case.
+push / pop - O(1)
+shift / unshift / concat / slice / splice - O(n)
+forEach / map / filter / reduce - O(n)
+
+-------------------------------------------------------------------------------------------
+
+
+
+
+
